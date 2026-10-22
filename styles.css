@@ -1,0 +1,77 @@
+/* Configuración general y fondo - Estilo Hardware / Tech */
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+    background-color: #0f172a; /* Azul oscuro chasis */
+    color: #e2e8f0;
+}
+
+/* Encabezados y títulos */
+h1 {
+    color: #38bdf8; /* Cyan neón */
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
+}
+
+/* Líneas separadoras */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #10b981, #38bdf8, transparent);
+    margin: 24px 0;
+}
+
+/* Enlaces */
+a {
+    color: #10b981;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+a:hover {
+    color: #34d399;
+    text-decoration: underline;
+    text-shadow: 0 0 8px rgba(52, 211, 153, 0.4);
+}
+
+/* Estilo para las IMÁGENES DE CONTENIDO (se excluye el cursor) */
+img:not(.cursor-img) {
+    display: inline-block;
+    max-width: 159%;
+    height: 220px; /* Altura uniforme adecuada */
+    object-fit: cover; /* Evita que la imagen se estire o se deforme */
+    margin: 8px 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(56, 189, 248, 0.2);
+    vertical-align: middle;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+img:not(.cursor-img):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(56, 189, 248, 0.4), 0 0 0 1px #38bdf8;
+}
+
+/* EXCLUSIVO PARA EL CURSOR DE MANO: Conserva su tamaño e icono Pixel-Art */
+img.cursor-img {
+    width: 32px; /* Tamaño clásico de icono de cursor */
+    height: auto;
+    margin: 10px 0;
+    border-radius: 0;
+    box-shadow: none; /* Sin sombras decorativas */
+    vertical-align: middle;
+    image-rendering: pixelated; /* Mantiene la nitidez si es un arte pixelado */
+}
+
+/* Párrafos y texto */
+p {
+    font-size: 1rem;
+    color: #cacbcc;
+}
