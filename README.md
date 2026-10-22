@@ -1,0 +1,1 @@
+# peque-a-informaci-n-sobre-el-hardware
